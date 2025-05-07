@@ -58,7 +58,7 @@ Testing the C Program for the desired output.
     
     wait(NULL); // Wait for child process to finish
     return 0; 
-} 
+    } 
 
     void server(int rfd, int wfd) { 
     int n; 
@@ -77,8 +77,8 @@ Testing the C Program for the desired output.
         n = read(fd, buff, 2000); 
         write(wfd, buff, n); 
         close(fd);
-    } 
-}
+     } 
+    }
 
     void client(int wfd, int rfd) {
     int n; 
@@ -97,7 +97,7 @@ Testing the C Program for the desired output.
 
     // Print file contents
     write(1, buff, n);
-}
+    }
 
 
 
